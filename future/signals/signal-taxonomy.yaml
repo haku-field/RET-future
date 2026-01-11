@@ -1,0 +1,147 @@
+version: 0.1.0
+id: ret-future.signal-taxonomy
+scope: RET-future
+stance:
+  non_semantic: true
+  non_agentive: true
+  non_narrative: true
+  read_only_reference: true
+
+notes:
+  - Signals are structural markers, not messages or experiences.
+  - This taxonomy is for comparison/inspection only.
+
+primitives:
+  - id: presence
+    label: Presence
+    description: Detectable existence without change.
+    properties:
+      - minimal
+      - substrate_agnostic
+      - non_agentive
+      - non_semantic
+    disallowed_inference:
+      - intention
+      - emotion
+      - engagement
+      - compliance
+
+  - id: transition
+    label: Transition
+    description: A change between states or phases, without specifying meaning.
+    properties:
+      - minimal
+      - substrate_agnostic
+      - non_agentive
+      - non_semantic
+    disallowed_inference:
+      - cause
+      - response
+      - responsibility
+
+  - id: timing
+    label: Timing
+    description: Relative ordering or placement of signals within reference windows.
+    properties:
+      - relational
+      - windowed
+      - non_semantic
+    relations:
+      - before
+      - after
+      - concurrent
+      - delayed
+      - indeterminate
+    disallowed_inference:
+      - urgency
+      - responsiveness
+      - failure_by_delay
+
+  - id: synchronization
+    label: Synchronization
+    description: Relative alignment/misalignment between signals.
+    properties:
+      - relational
+      - asymmetric_allowed
+      - non_semantic
+    forms:
+      - aligned
+      - offset
+      - drifted
+      - asymmetric
+      - unresolved
+    disallowed_inference:
+      - coordination
+      - agreement
+      - mutual_awareness
+
+  - id: absence
+    label: Absence
+    description: Detectable non-occurrence within a defined window.
+    properties:
+      - windowed
+      - structural
+      - non_semantic
+    disallowed_inference:
+      - failure
+      - rejection
+      - shutdown
+
+axes:
+  windows:
+    - id: detection_window
+      label: Detection window
+      description: Bounds for determining occurrence/non-occurrence.
+    - id: observation_window
+      label: Observation window
+      description: Bounds for tracking sequences without intervention.
+    - id: comparison_window
+      label: Comparison window
+      description: Bounds for comparing timing/synchronization across sets.
+
+  substrate:
+    - id: carrier_agnostic
+      label: Carrier-agnostic
+      description: Signals are representable across devices/bodies/substrates.
+
+  symmetry:
+    - id: asymmetric_allowed
+      label: Asymmetric allowed
+      description: Alignment need not be reciprocal.
+
+anti_mapping:
+  - from: signals
+    to:
+      - communication
+      - intent_inference
+      - emotional_reading
+      - compliance_detection
+      - safety_stop
+      - governance_control
+    note: Mapping signals into these frames is out of scope for RET-future.
+
+combinators:
+  allowed:
+    - id: sequence
+      label: Sequence
+      description: Ordered list of signals without causal implication.
+    - id: bundle
+      label: Bundle
+      description: Co-occurring set of signals without coordination implication.
+    - id: alignment_check
+      label: Alignment check
+      description: Compare synchronization forms across two sequences.
+  forbidden:
+    - id: narrative_assembly
+      label: Narrative assembly
+      description: Any composition that produces a story, motive, or message.
+    - id: agent_attribution
+      label: Agent attribution
+      description: Any composition that implies sender/receiver roles.
+
+validation:
+  invariants:
+    - non_semantic_must_hold
+    - non_agentive_must_hold
+    - no_causality_assumption
+    - absence_is_not_failure
