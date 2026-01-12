@@ -2,53 +2,82 @@
 
 All notable changes to **RET-future** are documented in this file.
 
-RET-future tracks **structural evolution only**.
-Changes do not imply progress, approval, or stabilization.
+RET-future tracks **structural evolution only**.  
+Changes do not imply progress, approval, stabilization, or promotion into RET.
 
 ---
 
-## [0.1.0] — Initial condition-layer release
+## [0.1.0] — Initial complete condition-layer release
 
 ### Added
 
-- Repository initialization with non-interference stance
-- Core boundary documents:
-  - `future/non-interference.md`
-  - `future/scope.md`
-  - `future/non-goals.md`
+#### Core boundaries
+- `future/non-interference.md`
+- `future/scope.md`
+- `future/non-goals.md`
 
-- Complete **conditions/** core:
-  - `conditions/overview.md`
-  - `conditions/assumptions.md`
-  - `conditions/unknowns.md`
-  - `conditions/constraints.md`
-  - `conditions/necessity.md`
-  - `conditions/sufficiency.md`
-  - `conditions/failure-modes.md`
+#### Conditions layer (complete)
+- `conditions/overview.md`
+- `conditions/assumptions.md`
+- `conditions/unknowns.md`
+- `conditions/constraints.md`
+- `conditions/necessity.md`
+- `conditions/sufficiency.md`
+- `conditions/failure-modes.md`
 
-- **signals/** foundational layer:
-  - `signals/signal-primitives.md`
-  - `signals/timing-sync.md`
-  - `signals/signal-taxonomy.yaml`
-  - `signals/mapping-notes.md`
+#### Signals layer (complete)
+- `signals/signal-primitives.md`
+- `signals/timing-sync.md`
+- `signals/signal-taxonomy.yaml`
+- `signals/mapping-notes.md`
+
+#### Embodiment layer (complete)
+- `embodiment/carrier-models.md`
+- `embodiment/sensor-surfaces.md`
+- `embodiment/actuation-channels.md`
+- `embodiment/privacy-boundaries.md`
+
+#### Integration layer (complete)
+- `integration/links-to-ret.md`
+- `integration/compatibility-matrix.yaml`
+- `integration/migration-paths.md`
+
+#### Schemas
+- `schemas/condition-set.schema.json`
+- `schemas/signal-taxonomy.schema.json`
+- `schemas/compatibility.schema.json`
+
+#### Auxiliary structure
+- `datasets/placeholders.md`
+- `appendix/glossary.md`
+- `appendix/references.md`
+
+---
 
 ### Notes
 
-- This release defines RET-future as a **parallel condition-layer** only.
-- No RET component (core, envelope, anchor, specs, protocols, guards) is modified or extended.
-- All contents are provisional, removable, and non-authoritative by design.
-- Human-facing explanation and future narration are intentionally excluded.
+- This release defines **RET-future as a fully self-contained parallel condition-layer**.
+- RET-future does **not** modify, extend, or depend on:
+  - RET-core
+  - RET-envelope
+  - RET-anchor
+  - RET-specs
+  - RET protocols, fragments, or guards
+- All contents are:
+  - Provisional
+  - Removable
+  - Non-authoritative
+  - Non-predictive
+- Human-facing explanation, persuasion, ethics, and future narration are intentionally excluded.
 
 ---
 
 ## Unreleased
 
-- `future/embodiment/` (carrier abstraction layer)
-- `future/integration/` (reference-only linkage to RET)
-- `schemas/` (machine-readable condition schemas)
-- `datasets/` (placeholders only)
-- `appendix/` (minimal glossary and references)
+No items scheduled.
 
-No schedule is defined.
+RET-future does not maintain a roadmap.
+
+Additions occur only when new conditions must be isolated and inspected.
 
 ---
