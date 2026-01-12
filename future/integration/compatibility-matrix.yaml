@@ -1,0 +1,61 @@
+version: 0.1.0
+id: ret-future.compatibility-matrix
+scope: reference_only
+
+principle:
+  description: >
+    This matrix describes conceptual compatibility boundaries
+    between RET-future and RET layers.
+  non_authoritative: true
+  non_binding: true
+
+layers:
+  RET-core:
+    compatible: reference_only
+    notes:
+      - existence_constraints_may_be_referenced
+      - no_mutation_allowed
+
+  RET-envelope:
+    compatible: reference_only
+    notes:
+      - boundary_conditions_may_be_compared
+      - no_feedback_paths
+
+  RET-anchor:
+    compatible: reference_only
+    notes:
+      - terminology_alignment_only
+      - no_human_translation_in_ret_future
+
+  RET-specs:
+    compatible: reference_only
+    notes:
+      - format_and_interface_comparison_only
+      - no_spec_promotion
+
+  RET-protocols:
+    compatible: reference_only
+    notes:
+      - scope_and_non_interference_check_only
+      - no_behavioral_import
+
+  RET-guards:
+    compatible: reference_only
+    notes:
+      - lexical_and_boundary_confirmation_only
+      - no_enforcement_logic
+
+prohibited:
+  - bidirectional_dependency
+  - runtime_coupling
+  - authority_escalation
+  - evaluation_feedback
+  - promotion_to_spec
+
+evaluation_rule:
+  compatibility_does_not_imply:
+    - feasibility
+    - desirability
+    - stability
+    - adoption

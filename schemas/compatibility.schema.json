@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "ret-future.compatibility",
+  "title": "RET-future Compatibility Schema",
+  "type": "object",
+  "description": "Schema describing reference-only compatibility relationships.",
+  "additionalProperties": false,
+
+  "properties": {
+    "layer": {
+      "type": "string",
+      "description": "Referenced RET layer."
+    },
+    "compatible": {
+      "type": "string",
+      "enum": ["reference_only", "incompatible"]
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+
+  "required": [
+    "layer",
+    "compatible"
+  ]
+}
