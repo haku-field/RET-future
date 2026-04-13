@@ -1,47 +1,19 @@
-# Datasets Placeholder
+# Dataset Placeholders
 
-This directory is reserved for **future datasets** related to **RET-future**.
+This directory preserves **non-authoritative temporal placeholders only**.
 
-No datasets are defined at this time.
+Allowed contents:
+- null contour snapshots
+- obsolete variable stubs
+- discarded branch markers
+- unresolved temporal traces
 
----
+Forbidden contents:
+- benchmark datasets
+- progress snapshots
+- convergence measurements
+- predictive training corpora
+- migration readiness samples
 
-## Purpose
-
-This placeholder exists to:
-
-- Declare intentional absence of data
-- Prevent implicit data accumulation
-- Avoid premature collection or aggregation
-- Signal that datasets are optional, not required
-
-RET-future does not require datasets to function.
-
----
-
-## Non-Goals
-
-This directory does **not** imply:
-
-- Planned data collection
-- Empirical grounding
-- Training material
-- Benchmarking resources
-
-Any dataset introduced here must be:
-
-- Explicitly scoped
-- Non-identifying
-- Discardable
-- Independent of RET layers
-
----
-
-## Status
-
-Empty by design.
-
-If this directory remains empty indefinitely,
-RET-future remains complete.
-
----
+If a placeholder begins to imply trend analysis,
+delete it.
