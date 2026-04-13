@@ -1,0 +1,6 @@
+failure_patterns:
+  - deterministic_language_leak
+  - roadmap_semantics
+  - pseudo_migration_authority
+  - duplicate_temporal_branching
+  - inevitability_narrative

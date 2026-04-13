@@ -1,0 +1,14 @@
+contours:
+  - id: temporal-open-variable
+    class: unsatisfied
+    persistence: provisional
+    promotable: false
+    anti_mapping:
+      - roadmap
+      - inevitability
+      - implementation-readiness
+
+  - id: obsolete-contour
+    class: removable
+    persistence: discard-first
+    promotable: false
