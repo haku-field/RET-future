@@ -95,6 +95,25 @@ RET-future/
 
 ---
 
+## Publication Boundary
+
+Public-safe:
+- README
+- INVARIANTS.md
+- states/future-contours.yaml
+- appendix/misuse-patterns.md
+- .zenodo.json
+
+Restricted:
+- transient contour drafts
+- temporary unknown-variable branches
+- discarded coexistence snapshots
+
+If publication begins to imply roadmap semantics,
+reduce publication scope.
+
+---
+
 ## Status
 
 Intentionally provisional.

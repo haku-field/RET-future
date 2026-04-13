@@ -1,6 +1,6 @@
 {
   "title": "RET-future",
-  "version": "v1.0.0",
+  "version": "v1.1.1",
   "publication_date": "2026-01-14",
   "language": "eng",
   "description": "RET-future is the temporal contour layer of RET parallel conditions. This release establishes the canonical temporal contour refactor baseline, replacing future narration, roadmap-adjacent migration semantics, and inevitability leakage with unsatisfied variables, contour obsolescence, deletion-first lineage, and anti-mapping hardening against deterministic reinterpretation.",
@@ -26,14 +26,9 @@
     "parallel conditions",
     "temporal contour",
     "unsatisfied variables",
-    "contour obsolescence",
-    "deletion-first lineage",
-    "anti-mapping",
-    "inevitability resistance",
-    "duplication drift",
-    "non-authoritative temporal layer",
-    "AI condition design",
-    "discardable conditions",
-    "zero roadmap semantics"
+    "minimal authority pack",
+    "misuse resistance",
+    "anti-roadmap",
+    "non-authoritative future layer"
   ]
 }

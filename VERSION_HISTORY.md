@@ -1,5 +1,36 @@
 # VERSION HISTORY
 
+## v1.1.1 — minimal authority fold patch
+
+This patch aligns **RET-future** with the established
+parallel-conditions authority grammar.
+
+### Structural fold
+- removed `audit/` directory as a standalone authority layer
+- elevated `INVARIANTS.md` to repository root
+- folded misuse and non-compliance records into `appendix/misuse-patterns.md`
+- absorbed publication boundary into `README.md`
+- preserved `states/future-contours.yaml` as the sole state authority file
+
+### Semantic continuity
+No temporal contour semantics were changed.
+
+The following remain unchanged:
+- temporal contours
+- unsatisfied variables
+- contour obsolescence
+- anti-roadmap semantics
+- deletion-first lineage
+
+### Reason for patch
+This patch reduces structural thickness
+to match the **minimal authority pack**
+already established by RET-density.
+
+The goal is family-level parallel consistency,
+not semantic revision.
+
+
 ## v1.0.0 — temporal contour refactor baseline
 
 Canonical rewrite of RET-future into:
